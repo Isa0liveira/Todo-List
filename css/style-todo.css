@@ -8,7 +8,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(63, 58, 58);
+    background-color: #24252A;
 }
 
 .header {
@@ -41,21 +41,28 @@ ul {
     position: fixed;
     z-index: 999;
     background-color: #000000;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    bottom:40px;
-    right:40px;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px;
+}
+
+.deleteAll:hover {
+    box-shadow: 1px 1px 3px 2px rgb(25, 77, 138);
+    transition: .6s;
 }
 
 .bxs-trash-alt {
     color: rgb(148, 53, 53);
-    margin: 17px -20px;
+    margin: -18px -28px;
+    padding: 18px;
+    border-radius: 50px;
 }
 
 .to-do {
-
     width: 60%;
 }
 
