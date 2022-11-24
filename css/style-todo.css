@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -13,21 +15,25 @@ body {
 
 .header {
     display: flex;
-    background-color: lightgray;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #24252A;
     padding: 10px;
     border-radius: 10px;
     margin: 30px 0px 15px 0px;
+    box-shadow: 1px 1px 1px 1px #00000070;
 }
 
 .p-header {
-    display: flex;
-    justify-content: center;
+    margin-right: auto;
+    cursor: pointer;
     font-size: 32px;
     font-weight: bolder;
     padding: 5px;
+    color: #edf0f1;
 }
 
-ul {
+.tarefas {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 20px;
@@ -89,7 +95,29 @@ ul {
     box-shadow: 6px 3px 7px 6px gray;
 }
 
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
 
+.nav__links {
+    list-style: none;
+}
+
+.nav__links .li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links .li a {
+    transition: all .3s ease 0s;
+}
+
+.nav__links .li a:hover {
+    color: #0088a9;
+}
 
 #tarefa {
     position: relative;

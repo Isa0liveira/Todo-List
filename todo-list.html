@@ -15,13 +15,21 @@
     <div class="to-do">
 
         <div class="header">
-            <p class="p-header">To-Do List</p>
+            <p class="p-header"><a class="p-header" href="todo-list.html">To-Do List</a></p>
+
+            <nav>
+                <ul class="nav__links">
+                    <li class="li"><a href="#">Adicionar tarefas</a></li>
+                    <li class="li"><a href="#">Exibir Tarefas</a></li>
+                    <li class="li"><a href="#">Dados Cadastrados</a></li>
+                </ul>
+            </nav>
 
             <div class="deleteAll" title="Deletar todas as tarefas criadas.">
                 <button><i class="bx bxs-trash-alt"></i></button>
             </div>
         </div>
-
+<hr>
         <br>
         <div class="divInsert">
             <p id="tarefa">Tarefa</p>
@@ -29,7 +37,7 @@
             <button><i class="bx bx-plus"></i></button>
         </div>
 
-        <ul></ul>
+        <ul class="tarefas"></ul>
 
     </div>
 
