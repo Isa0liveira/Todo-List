@@ -15,39 +15,45 @@
         <div class="card">
             <h1>CADASTRAR</h1>
 
-            <div class="label-float">
-                <input type="text" id="nome" placeholder="" required>
-                <label for="labelNome">Nome</label>
-                <span class="span">Nome deve conter no mínimo 10 caracteres.</span>
-            </div>
+            <form id="form" action="">
+                <div class="label-float">
+                    <input type="text" id="nome" placeholder="" required oninput="nomeValidar()">
+                    <label for="labelNome">Nome</label>
+                    <span class="span">Nome deve conter no mínimo 10 caracteres.</span>
+                </div>
 
-            <div class="label-float">
-                <input type="text" id="usuario" placeholder="" required>
-                <label for="labelUsuario">Usuário</label>
-                <span class="span">Login deve ter conter no máximo 10 caracteres.</span>
-            </div>
+                <div class="label-float">
+                    <input type="text" id="usuario" placeholder="" required oninput="loginValidar()">
+                    <label for="labelUsuario">Usuário</label>
+                    <span class="span">Login deve ter conter no máximo 10 caracteres.</span>
+                </div>
 
-            <div class="label-float">
-                <input type="email" id="email" placeholder="" required>
-                <label for="labelEmail">Email</label>
-                <span class="span">Insira um email válido.</span>
-            </div>
+                <div class="label-float">
+                    <input type="email" id="email" placeholder="" required oninput="emailValidar()">
+                    <label for="labelEmail">Email</label>
+                    <span class="span">Insira um email válido.</span>
+                </div>
 
-            <div class="label-float">
-                <input type="password" id="senha" placeholder="" required>
-                <label for="labelSenha">Senha</label>
-                <span class="span">As senhas devem ser iguais.</span>
-            </div>
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="" required oninput="compareSenha()">
+                    <label for="labelSenha">Senha</label>
+                    <span class="span">As senhas devem ser iguais.</span>
+                </div>
 
-            <div class="label-float">
-                <input type="text" id="confSenha" placeholder="" required>
-                <label for="labelConfSenha">Confirmar Senha</label>
-                <span class="span">As senhas devem ser iguais.</span>
-            </div>
+                <div class="label-float">
+                    <input type="password" id="confSenha" placeholder="" required oninput="compareSenha()">
+                    <label for="labelConfSenha">Confirmar Senha</label>
+                    <span class="span">As senhas devem ser iguais.</span>
+                </div>
 
-            <div class="centralizar">
-                <button>Entrar</button>
-            </div>
+                <div class="centralizar">
+                    <button type="submit" value="Entrar" onclick="entrar()">Entrar</button>
+                    
+                </div>
+
+
+            </form>
+
 
         </div>
     </div>
