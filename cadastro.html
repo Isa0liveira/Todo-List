@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset=" UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style-cadastro.css">
-<title>Cadastro - Lista de Tarefas</title>
-</head>
-<!-- (nome, login, email, senha e confirmação de senha e botão de login) -->
-<body>
-    <div id="container">
-        <div id="box">
-            <h1>Cadastro</h1>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-cadastro.css">
+    <title>Cadastro - Lista de Tarefas</title>
 
-            <input class="nome" type="text" placeholder="Nome">
-            <input class="login" type="text" placeholder="Login">
-            <input class="email" type="email" placeholder="Email">
-            <input class="senha" type="text" placeholder="Senha">
-            <input class="confSenha" type="text" placeholder="Confirmação de Senha">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label for="usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="email" id="email" placeholder="" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label for="senha">Senha</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="confSenha" placeholder="" required>
+                <label for="confSenha">Confirmar Senha</label>
+            </div>
+
+            <div class="centralizar">
+                <button>Entrar</button>
+            </div>
+
         </div>
     </div>
 </body>
