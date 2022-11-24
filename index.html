@@ -2,36 +2,52 @@
 <html lang="pt_BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset=" UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/lista-de-tarefas.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style-index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style-cadastro.css">
+    <title>Cadastro - Lista de Tarefas</title>
+
 </head>
 
 <body>
-    <div class="to-do">
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
 
-        <div class="header">
-            <p class="p-header">To-Do List</p>
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label for="nome">Nome</label>
+            </div>
 
-            <button><i class="bx bxs-trash-alt"></i></button>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label for="usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="email" id="email" placeholder="" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label for="senha">Senha</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="confSenha" placeholder="" required>
+                <label for="confSenha">Confirmar Senha</label>
+            </div>
+
+            <div class="centralizar">
+                <button>Entrar</button>
+            </div>
+
         </div>
-
-        <!-- <hr> -->
-        <br>
-        <div class="divInsert">
-            <p id="tarefa">Tarefa</p>
-            <input type="text" class="textInsert" placeholder="ex: Comprar leite, farinha, açúcar...">
-            <button><i class="bx bx-plus"></i></button>
-        </div>
-
-        <ul></ul>
-
     </div>
 
     <script src="script/index.js"></script>
 </body>
+
 </html>
