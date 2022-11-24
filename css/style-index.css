@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(63, 58, 58);
+}
+
+.header {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0px 15px 0px;
+}
+
+.p-header {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+.header button {
+    float: right;
+}
+
+.header i {
+    font-size: 22px;
+}
+
+.to-do {
+    
+    width: 60%;
+}
+
+.textInsert {
+    border: solid 1px black;
+    padding: 10px;  
+    
+    outline: none;
+    border: none;
+    width: 90%;
+    background-color: lightgray;
+}
+
+.textInsert:focus {
+    box-shadow: 1px 1px 3px 1px rgb(25, 77, 138);
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+.divInsert {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 6px 3px 7px 6px gray;
+}
+   
+
+
+#tarefa {
+    position: relative;
+    padding: 11px;
+    font-weight: bold;
+}
+
+button {
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+.bx-plus {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: rgb(85, 85, 85);
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+    opacity: 0.6;
+}
+
+.bx-plus:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.divLi {
+    margin-top: 30px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 3px 7px 6px gray;
+}
+
+.divLi span {
+    width: 80%;
+    color: dimgray;
+}
+
+.divLi input {
+    width: 10%;
+    outline: none;
+    accent-color: currentcolor;
+}
+
+.divLi i {          /*icon lixeira*/
+    font-size: 22px;
+    color: brown;
+}
+
+li {
+    list-style-type: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+        /*responsividade*/
+
+@media (max-width: 700px) {
+    input {
+        width: 70%;
+    }
+
+    .divInsert {
+        width: 30%;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
